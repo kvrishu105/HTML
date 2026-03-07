@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+ <h1>Job Application Form</h1>
+
+<form>
+
+<!-- Name -->
+<label>Name:</label><br>
+ <input type="text" id="name" name="name" required><br>
+
+<!-- Email -->
+<label>Email:</label><br>
+<input type="email" id="email" name="email" required><br>
+
+<!-- Password -->
+<label>Password:</label><br>
+<input type="password" id="password" name="password" minlength="6"><br><br>
+
+<!-- Gender -->
+<legend>Gender</legend>
+<label for="male">Male</label>
+<input type="radio" id="male" name="gender" value="male">
+<label for="female">Female</label>
+<input type="radio" id="female" name="gender" value="female"><br><br>
+
+<!-- Skills -->
+<label>Skills:</label><br>
+<label for="html">Html</label>
+<input type="checkbox" id="html" name="html">
+<label for="css">CSS</label>
+<input type="checkbox" id="css" name="css">
+<label for="java">JAVA</label>
+<input type="checkbox" id="java" name="java"><br><br>
+
+
+<!-- Date of Birth -->
+<label>Date of Birth:</label><br>
+<input type="date" id="dob" name="dob"><br><br>
+
+<!-- Upload Resume -->
+<label>Upload Resume:</label><br>
+<input type="file" name="resume"><br><br>
+
+<!-- Address -->
+<label>Address:</label><br>
+<textarea rows="5" cols="20"></textarea><br><br>
+
+
+<!-- Dropdown select Country-->
+ <label for="country">Country:</label>
+ <select id="country" name="country">
+    <option value="">Select a country</option>
+    <option value="US">United states</option>
+    <option value="UK">United kingdom</option>
+    <option value="France">France</option>
+    <option value="India">India</option>
+</select> <br><br>
+
+<!-- Buttons -->
+ <button type="submit">Submit Form</button> 
+ <button type="reset">Reset Form</button> <br>
+
+</form>
+    
+</body>
+</html>
